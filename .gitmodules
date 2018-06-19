@@ -1,3 +1,6 @@
 [submodule "submodules/json"]
 	path = submodules/json
 	url = https://github.com/nlohmann/json.git
+[submodule "submodules/rapidjson"]
+	path = submodules/rapidjson
+	url = https://github.com/TencentOpen/rapidjson

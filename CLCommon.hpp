@@ -12,7 +12,8 @@
 #include <vector>
 #include <list>
 #include <map>
-
-using namespace std;
+#include <rapidjson/document.h>
+#include <rapidjson/writer.h>
+#include <rapidjson/stringbuffer.h>
 
 #endif

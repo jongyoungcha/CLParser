@@ -3,6 +3,7 @@
 
 #include <CLCommon.hpp>
 
+
 #define CONFIG_FILE_NAME "clparser.json"
 
 using namespace std;
@@ -24,11 +25,15 @@ namespace clconfig {
     public:
         CLConfigLoader();
         virtual ~CLConfigLoader();
+
         virtual CLConfig operator() (string path){
-            std::
+            m_path = path;
+            LoadConfig();
         }
     protected:
+        virtual int LoadConfig();
     private:
+        string m_path;
     };
 }
 
